@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Blocks</title>
+        <style>
+            .wrap {
+                background-color: rgb(205, 205, 205);
+                margin-bottom: .2em;
+            }
+
+            .menu {
+                background-color: rgb(220, 220, 220);
+                width: 15em;
+                float: left;
+            }
+
+            .content {
+                background-color: rgb(180, 180, 180);
+                margin-left: 15em;
+                margin-bottom: .2em;
+            }
+
+            .footer {
+                clear: both;
+                background-color: rgb(200, 200, 200);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrap">
+            <div class="menu">
+                <h3>Блок навигации</h3>
+    
+                <ul>
+                    <li>Ширина 15em</li>
+                    <li>Должен присутствовать цвет фона</li>
+                    <li>Располагается слева</li>
+                    <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере</li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <h3>Статья 1</h3>
+                <p>
+                    Размер блока:<br>
+                    Занимает всю доступную ширину<br>
+                    Должен присутствовать цвет фона<br>
+                    Во всех "статьях" сделайте отступ снизу от соседей равным .2em при помощи свойства margin-bottom<br>
+                </p>
+            </div>
+    
+            <div class="content">
+                <h3>Статья 2</h3>
+    
+                <p>
+                    Размер блока:<br>
+                    Занимает всю доступную ширину<br>
+                    Должен присутствовать цвет фона<br>
+                    Во всех "статьях" сделайте отступ снизу от соседей равным .2em при помощи свойства margin-bottom<br>
+                    Картинка вставлена при помощи тега, плавание организовано по правому краю внутри данной статьи для этой картинки.<br>
+                </p>
+    
+                <img src="/img/icon_mail.png" alt="Mail icon" title="Mail icon" width="60px" style="float: right;">
+                <div style="clear: right;"></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis necessitatibus laborum optio assumenda. Iure ipsum officiis dolores animi adipisci a consequatur eum rem porro illo. At nostrum excepturi quaerat doloremque.</p>
+        </div>
+    </body>
+</html>
