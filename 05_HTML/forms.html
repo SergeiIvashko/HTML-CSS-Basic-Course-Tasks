@@ -42,10 +42,10 @@
                     <form id="authorization" name="authorization-left" method="post" action="http://fe.it-academy.by/TestForm.php" target="_blank">
                         <fieldset>
                             <legend>Авторизируйтесь</legend>
-                            <label><input type="text" id="login" name="login" required></label>
-                            <label for="login"><sup>*</sup>Логин</label><br>
-                            <label><input type="password" id="pass" name="password" required></label>
-                            <label for="pass"><sup>*</sup>Пароль</label><br>
+                            <label><input type="text" id="autorization-login" name="login" required></label>
+                            <label for="autorization-login"><sup>*</sup>Логин</label><br>
+                            <label><input type="password" id="autorization-pass" name="password" required></label>
+                            <label for="autorization-pass"><sup>*</sup>Пароль</label><br>
                             <label><input type="checkbox" name="stay-turned" id="stay-turned-chbox">Остаться в системе</label><br>
                             <label><input type="submit" value="Войти"></label>
                             <legend><em>*-обязательное поле</em></legend>
@@ -128,7 +128,7 @@
                         <fieldset>
                             <legend>Upload</legend>
                             <label for="file-field">Файл:</label><br>
-                            <input type="file" name="file-field" dir="ltr"><br>
+                            <input type="file" name="file-field" id="file-field" dir="ltr"><br>
                             <label for="exp-date-left">Срок хранения (года):</label><br>
                             <input type="text" id="exp-date" name="exp-date-left" size="4">
                             <input type="submit" value="загрузить">
