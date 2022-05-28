@@ -6,11 +6,11 @@
     </head>
     <body>
         <table width="700">
-            <col width="50%"><col widht="50%">
+            <col width="50%"><col width="50%">
             <tr valign="top">
                 <td>
                     <h5>Простая форма поиска с вариантами:</h5>
-                    <form id="search-string-left" name="serch-left" method="post|get" action="http://fe.it-academy.by/TestForm.php" target="_blank">
+                    <form id="search-string-left" name="serch-left" method="post" action="http://fe.it-academy.by/TestForm.php" target="_blank">
                         <fieldset>
                             <legend>Строка поиска</legend>
                             <label><input type="text" id="search-input-left" name="serch-name-left" maxlength="10" autocomplete="off"></label>
@@ -23,7 +23,7 @@
                 </td>
                 <td>
                     <h5>Простая форма поиска с варинтами:</h5>
-                    <form id="serch-string-right" name="search-right" method="post|get" action="http://fe.it-academy.by/TestForm.php" target="_blank">
+                    <form id="serch-string-right" name="search-right" method="post" action="http://fe.it-academy.by/TestForm.php" target="_blank">
                         <fieldset>
                             <legend>Строка поиска</legend>
                             <label><input type="text" id="search-input-right" name="search-name-right" required autofocus></label>
@@ -54,7 +54,7 @@
                 </td>
                 <td>
                     <h5>Опрос (голосование):</h5>
-                    <form id="voting" name="voting-right" method="get|post" action="http://fe.it-academy.by/TestForm.php" target="_blank">
+                    <form id="voting" name="voting-right" method="post" action="http://fe.it-academy.by/TestForm.php" target="_blank">
                         <fieldset>
                             <legend>Как вам?</legend>
                             <label>
@@ -85,7 +85,9 @@
                             <label for="login"><sup>*</sup>Имя</label><br>
                             <input type="email" id="email" name="email" pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*" required>
                             <label for="email"><sup>*</sup>e-mail</label><br>
-                            <textarea name="review-text" lang="ru">Форма отправки</textarea><br>
+                            <label>
+                                <textarea name="review-text" lang="ru">Форма отправки</textarea>
+                            </label><br>
                             <input type="submit" value="Отправить">
                             <legend>*-обязательное поле</legend>
                         </fieldset>
@@ -93,29 +95,33 @@
                 </td>
                 <td>
                     <h5>Выпадающий и мульти списки:</h5>
-                    <form id="lists" name="lists-right" method="get|post" action="http://fe.it-academy.by/TestForm.php" target="_blank">
+                    <form id="lists" name="lists-right" method="post" action="http://fe.it-academy.by/TestForm.php" target="_blank">
                         <fieldset>
                             <legend>Города РБ</legend>
-                            <select id="drop-down-list" name="drop-down-list-left">
+                            <label>
+                                <select id="drop-down-list" name="drop-down-list-left">
                                 <option value="1">Брест</option>
                                 <option value="2">Витебск</option>
                                 <option value="3">Гомель</option>
                                 <option value="4">Гродно</option>
                                 <option value="5">Минск</option>
                                 <option value="6">Могилёв</option>
-                            </select>
-                            <select id="multi-list" name="lists[]" size="8" multiple>
-                                <optgroup label="Города РБ">
-                                    <option value="1">Брест</option>
-                                    <option value="2">Витебск</option>
-                                    <option value="3">Минск</option>
-                                </optgroup>
-                                <optgroup label="Города Украины">
-                                    <option value="4">Киев</option>
-                                    <option value="5">Львов</option>
-                                    <option value="6">Мариуполь</option>
-                                </optgroup>
-                            </select>
+                                </select>
+                            </label>
+                            <label>
+                                <select id="multi-list" name="lists[]" size="8" multiple>
+                                    <optgroup label="Города РБ">
+                                        <option value="1">Брест</option>
+                                        <option value="2">Витебск</option>
+                                        <option value="3">Минск</option>
+                                    </optgroup>
+                                    <optgroup label="Города Украины">
+                                        <option value="4">Киев</option>
+                                        <option value="5">Львов</option>
+                                        <option value="6">Мариуполь</option>
+                                    </optgroup>
+                                </select>
+                            </label>
                             <input type="submit" value="ОК">
                         </fieldset>
                     </form>
@@ -124,24 +130,24 @@
             <tr valign="top">
                 <td>
                     <h5>Загрузка файла на сервер:</h5>
-                    <form id="file-upload" name="file-upload-left" method="get|post" action="http://fe.it-academy.by/TestForm.php" enctype="multipart/form-data" target="_blank">
+                    <form id="file-upload" name="file-upload-left" method="post" action="http://fe.it-academy.by/TestForm.php" enctype="multipart/form-data" target="_blank">
                         <fieldset>
                             <legend>Upload</legend>
                             <label for="file-field">Файл:</label><br>
                             <input type="file" name="file-field" id="file-field" dir="ltr"><br>
                             <label for="exp-date-left">Срок хранения (года):</label><br>
-                            <input type="text" id="exp-date" name="exp-date-left" size="4">
+                            <input type="text" id="exp-date-left" name="exp-date-left" size="4">
                             <input type="submit" value="загрузить">
                         </fieldset>
                     </form>
                 </td>
                 <td>
                     <h5>Валидация данных HTML5:</h5>
-                    <form id="data-validation" name="data-validation-right" method="get|post" action="http://fe.it-academy.by/TestForm.php" target="_blank">
+                    <form id="data-validation" name="data-validation-right" method="post" action="http://fe.it-academy.by/TestForm.php" target="_blank">
                         <fieldset>
                             <legend>Строка поиска</legend>
-                            <input type="text" id="ru-letters" name="ru-letters-field" placeholder="Только кириллица" pattern="[А-Яа-я]+"><br>
-                            <label for="tel-number-field">
+                            <label><input type="text" id="ru-letters" name="ru-letters-field" placeholder="Только кириллица" pattern="[А-Яа-я]+"></label><br>
+                            <label for="tel">
                                 <em>Телефонный номер в формате</em><br>
                                 <em>+XXX-XX-XXXXXXX, где X-любое число</em>
                             </label><br>

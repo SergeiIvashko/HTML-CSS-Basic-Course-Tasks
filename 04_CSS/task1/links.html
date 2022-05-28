@@ -1,53 +1,56 @@
 <!DOCTYPE html> 
-<HTML> 
+<HTML lang="en">
         <HEAD> 
             <META charset="utf-8"> 
             <TITLE>Ссылки. Оформление</TITLE> 
-		<style type="text/css">
+		<style>
 			div {
                 border: solid 1px lightgray;
                 border-top-right-radius: 20px;
             }
             div p {
-                margin-top: 0%;
-                margin-bottom: 0%;
+                margin-top: 0;
+                margin-bottom: 0;
                 text-indent: 2em;
             }
             
-            #page-link {
-                background-image: url(/pic/extref.png); 
+            page-link {
+                background-image: url(pic/extref.png);
                 padding-left: .7em; 
                 background-position: left center; 
                 background-repeat: no-repeat;
             }
 
+            .pdf-class,
             #pdf-link:hover {
-                background-image: url(/pic/logo-pdf.png);
+                background-image: url(pic/logo-pdf.png);
                 background-position: right center;
                 background-repeat: no-repeat;
                 padding-right: 1.2em;
             }
 
+            .zip-class,
             #zip-link:hover {
-                background-image: url(/pic/logo-zip.gif);
+                background-image: url(pic/logo-zip.gif);
                 background-position: right center;
                 background-repeat: no-repeat;
                 padding-right: 1.2em;
             }
 
+            .doc-class,
             #doc-link:hover {
-                background-image: url(/pic/logo-doc.jpg);
+                background-image: url(pic/logo-doc.jpg);
                 background-position: right center;
                 background-repeat: no-repeat;
                 padding-right: 1.2em;
             }
 
             ul {
-                padding-inline-start: 0%;
+                padding-inline-start: 0;
             }
             ul li {
                 list-style-type: none;
-                background-image: url(/pic/logo-list.jpg);
+                background-image: url(pic/logo-list.jpg);
                 background-position: left center;
                 background-repeat: no-repeat;
                 padding-left: 1.5em;
@@ -57,30 +60,30 @@
         <BODY>
         <h2>Форматы файлов.</h2>
         <div>
-            <p>.DOC или .doc (от англ. <a href="https://ru.wikipedia.org/wiki/Doc" target="_blank" id="page-link">document</a>) — расширение имени файла, используемое для файлов, представляющих текст, с разметкой или без.Расширение .DOC часто использовалось для обозначения простых текстовых файлов без форматирования, однако позже стало использоваться для двоичных форматов с разметкой.<br>
-                <a href="files/document.doc" id="doc-link">Документ MS Word</a>
+            <p>.DOC или .doc (от англ. <a href="https://ru.wikipedia.org/wiki/Doc" target="_blank" class="page-link">document</a>) — расширение имени файла, используемое для файлов, представляющих текст, с разметкой или без.Расширение .DOC часто использовалось для обозначения простых текстовых файлов без форматирования, однако позже стало использоваться для двоичных форматов с разметкой.<br>
+                <a href="files/document.doc" class="doc-class">Документ MS Word</a>
                 </p>
         </div>
 
         <div>
-            <p>Portable Document Format (<a href="https://ru.wikipedia.org/wiki/pdf" target="_blank" id="page-link">PDF</a>) — межплатформенный формат электронных документов, разработанный фирмой Adobe Systems с использованием ряда возможностей языка PostScript.
+            <p>Portable Document Format (<a href="https://ru.wikipedia.org/wiki/pdf" target="_blank" class="page-link">PDF</a>) — межплатформенный формат электронных документов, разработанный фирмой Adobe Systems с использованием ряда возможностей языка PostScript.
                 <br>
-                <a href="files/document.pdf" id="pdf-link">Документ PDF</a>
+                <a href="files/document.pdf" class="pdf-class">Документ PDF</a>
             </p>
         </div>
 
         <div>
-            <p>ZIP — популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение <a href="https://ru.wikipedia.org/wiki/zip" target="_blank" id="page-link">.zip</a> и хранит в сжатом или несжатом виде один или несколько файлов, которые можно из него извлечь путём распаковки с помощью специальной программы.
+            <p>ZIP — популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение <a href="https://ru.wikipedia.org/wiki/zip" target="_blank" class="page-link">.zip</a> и хранит в сжатом или несжатом виде один или несколько файлов, которые можно из него извлечь путём распаковки с помощью специальной программы.
                 <br>
-                <a href="files/document.zip" id="zip-link">Архив</a>
+                <a href="files/document.zip" class="zip-class">Архив</a>
             </p>
         </div>
 
         <h3>Это список из файлов</h3>
         <ul>
-        	<li><a href="files/document.doc">Документ MS Word</a></li>
-        	<li><a href="files/document.pdf">Документ PDF</a></li>
-        	<li><a href="files/document.zip">Архив</a></li>
+        	<li><a href="files/document.doc" id="doc-link">Документ MS Word</a></li>
+        	<li><a href="files/document.pdf" id="pdf-link">Документ PDF</a></li>
+        	<li><a href="files/document.zip" id="zip-link">Архив</a></li>
         </ul>
 
         </BODY> 
