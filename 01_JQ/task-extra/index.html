@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery Extra Task</title>
+    <style>
+        fieldset {
+            width: 400px;
+        }
+
+        input[type="button"] {
+            margin-top: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h2>Password verification</h2>
+
+    <fieldset>
+        <label><input type="text" class="input-field" id="initial-password"> <sup>*</sup> Password</label><br>
+        <label><input type="text" class="input-field" id="confirm-password"> <sup>*</sup> Confirm password</label><br>
+        <input type="button" id="send" value="Send">
+    </fieldset>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('input').keyup(function () {
+                var valPas = $('#initial-password').val();
+                var valConfPas = $('#confirm-password').val();
+                if(valPas.length != 0) {
+                    $('.input-field').css("backgroundColor", "green");
+                }
+                else {
+                    $('.input-field').css("backgroundColor", "white");
+                }
+
+                if (valPas !== valConfPas && valConfPas != 0) {
+                    $('.input-field').css("backgroundColor", "red")
+                }
+            })
+        })
+    </script>
+</body>
+</html>
